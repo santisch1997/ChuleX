@@ -1,0 +1,39 @@
+.card-container {
+  text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.card {
+  width: 45%;
+  max-width: 30%;
+  margin: 0;
+  margin-right: 2.5%;
+  margin-bottom: 80px;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.3s; /* Agrega una transición suave para el efecto de escala */
+  height: 350px; /* Establece una altura fija para la tarjeta */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% en el hover */
+}
+
+.card-img-top {
+  max-width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.card-text {
+  flex-grow: 1; /* Permite que el texto crezca verticalmente si hay más contenido */
+  overflow: hidden;
+  word-wrap: break-word; /* Permite que las palabras se rompan y sigan en la siguiente línea */
+  padding: 10px; /* Espaciado interno para el texto */
+}
+.h3-Cards {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 55px;
+  margin-bottom: 100px;
+}

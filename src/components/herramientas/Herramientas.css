@@ -1,0 +1,93 @@
+.herramientas-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.herramientas-images {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.tool-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.herramientas-description {
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.8);
+
+}
+
+.herramientas-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.herramientas-h4 {
+  font-size: 18px;
+  font-family: inherit;
+  color: #ffffffd4;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.drone-image,
+.gimbal-image {
+  max-width: 300px;
+  transition: transform 0.8s;
+}
+
+.iphone-image {
+  max-width: 250px;
+  transition: transform 0.8s;
+  margin-bottom: 25px;
+
+}
+
+.insta360-image{
+  max-width: 250px;
+  transition: transform 0.8s;
+  margin-bottom: 25px;
+}
+
+.gimbal-image:hover {
+  content: url('src/assets/equipos-gimball2.png');
+  transform: scale(1.1);
+  transition: transform 0.8s; transform: 1s;
+  
+}
+
+.iphone-image:hover {
+  content: url('src/assets/iphone14-2.png');
+  transform: scale(1.1);
+  transition: transform 0.8s; transform: 1s;}
+
+.insta360 {
+  max-width: 250px;
+  transition: transform 0.8s; transform: 1s;
+  margin-bottom: 25px;
+}
+.insta360-image:hover {
+  content: url('src/assets/insta360-2.png');
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}

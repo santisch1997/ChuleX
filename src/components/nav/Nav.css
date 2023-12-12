@@ -1,0 +1,31 @@
+nav {
+    position: fixed; /* Fija la barra de navegación en la parte superior de la pantalla */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con opacidad */
+    padding: 10px 0; /* Ajusta el padding verticalmente */
+    text-align: center;
+    border-radius: 20px; /* Redondea todos los bordes */
+    width: 50%; /* Ancho deseado */ 
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: absolute; /* Establece la posición absoluta */
+    top: 20px; 
+    z-index: 999; /* Asigna un valor alto al z-index para que esté en la parte superior */
+    margin-bottom: 800px;
+
+
+    
+    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  ---------------------
+  
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+  }
