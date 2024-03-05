@@ -11,12 +11,12 @@ nav {
     top: 20px; 
     z-index: 999; /* Asigna un valor alto al z-index para que esté en la parte superior */
     margin-bottom: 800px;
-
-
-    
     
   }
   
+  .portfolio-nav {
+    margin-bottom: 50px;
+  }
   ul {
     list-style: none;
   }

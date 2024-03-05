@@ -1,24 +1,26 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css'
-import 'jquery';
-import About from './components/about/About';
-import Cards from './components/cards/Cards';
-import Nav from './components/nav/Nav';
-import Footer from './components/footer/Footer';
-import Herramientas from './components/herramientas/Herramientas';
-import Counter from './components/counter/Counter';
+import './styles.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ChulexView from './views/ChulexView';
+import PortfolioView from './views/PortfolioView';
+import PortfolioHome from './views/PortfolioHome';
+
+
 
 function App() {
   return (
-    <div >
-      <Nav /> 
-      <About/>
-      <Cards/>
-      <Herramientas/>
-      <Counter/>
-      <Footer /> 
-    </div>
+    <Router>
+      <Routes>
+        
+        <Route path="/" element={<PortfolioHome />} />
+        <Route path="/chulex" element={<ChulexView />} />
+        <Route path="/portfolio" element={<PortfolioView />} />
+
+
+        {/* Agrega más rutas y componentes de vistas según sea necesario */}
+      </Routes>
+    </Router>
   );
 }
 

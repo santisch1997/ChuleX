@@ -1,0 +1,33 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 15, 15, 0.8);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna (vertical) */
+  margin-top: 120px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.sidenav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: rgba(255, 215, 0, 0.7);
+  color: black;
+}
+
+.main {
+  margin-left: 220px;
+  padding: 20px;
+}

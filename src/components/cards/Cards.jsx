@@ -15,7 +15,7 @@ const cardData = [
     description: 'Videos inmobiliarios con tomas aereas y peatonales.',
   },
   {
-    imageSrc: 'src/assets/deportes.jpg',
+    imageSrc: 'src/assets/deportesH.jpg',
     imageAlt: 'Imagen 3',
     title: 'Deportes',
     description: 'Contenido para diferentes tipos de deportes',
