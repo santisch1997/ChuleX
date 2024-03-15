@@ -1,0 +1,159 @@
+.avatar-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente en el centro */
+  align-items: center; /* Alinea verticalmente en el centro */
+  width: 90%; /* Utiliza el 90% del ancho disponible */
+}
+
+.avatar-img {
+  position: relative;
+  width: 80%; /* Utiliza el 80% del ancho disponible */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-left: auto; /* Para moverlo hacia el lado derecho */
+  margin-right: auto; /* Centra horizontalmente */
+  max-width: 350px; /* Ancho máximo */
+  
+}
+
+.avatar-text {
+  text-align: center; /* Centra horizontalmente */
+  width: 80%; /* Utiliza el 80% del ancho disponible */
+  margin-left: auto; /* Para moverlo hacia el lado derecho */
+  margin-right: auto; /* Centra horizontalmente */
+  max-width: 600px; /* Ancho máximo */
+}
+
+.button-container {
+  margin-top: 20px; /* Ajusta el margen superior para dar espacio entre el texto y los botones */
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+  align-items: flex-start; /* Alinea los elementos verticalmente arriba */
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.circle-buttons {
+  margin-top: 20px; /* Espacio entre los botones anteriores y los nuevos */
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.btn-circle {
+  width: 3rem; /* Tamaño del botón circular en unidades relativas */
+  height: 3rem; /* Tamaño del botón circular en unidades relativas */
+  margin-right: 0.5rem; /* Espacio entre los botones */
+}
+
+/* Copia tu CSS existente debajo de esta línea */
+
+.avatar-container {
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: auto; 
+}
+.avatar-img {
+  position: relative;
+  width: 350px; /* Ancho específico para la imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-left: auto; /* Para moverlo hacia el lado derecho */
+  margin-right: 200px; /* Agrega un margen en el lado derecho */
+  max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+}
+
+.avatar-text {
+  margin-left: 200px; /* Ajusta el margen izquierdo según sea necesario */
+  margin-right: 20px; /* Espacio entre el texto y la imagen */
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  flex-direction: column; /* Alinea los elementos verticalmente */
+}
+
+.greeting {
+  font-family: 'Montserrat', sans-serif; /* Usa la fuente Montserrat */
+  font-weight: 600; /* Semi-bold */
+  color: #f5f5f5; /* Blanco crudo */
+  margin: 0; /* Elimina el margen por defecto */
+  font-size: 4.5em; 
+  text-align: left;
+
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif; /* Usa la fuente Montserrat */
+  font-weight: 600; /* Semi-bold */
+  color: #f5f5f5; /* Blanco crudo */
+  margin: 0; /* Elimina el margen por defecto */
+  font-size: 3em; /* Tamaño de fuente muy grande */
+}
+
+.santiago {
+  font-weight: bolder; /* Negrita */
+  color: transparent; /* Hacemos el texto transparente */
+  background-image: linear-gradient(to top, #FF810E, rgba(255, 129, 14, 0.2)); /* Gradiente con opacidad */
+  -webkit-background-clip: text; /* Aplicamos el clip de fondo al texto */
+  background-clip: text; /* Aplicamos el clip de fondo al texto */
+}
+.button-container {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+  align-items: flex-start; /* Alinea los elementos verticalmente arriba */
+  margin-top: 20px; /* Ajusta el margen superior para dar espacio entre el texto y los botones */
+
+}
+
+.btn {
+  margin: 0 10px; /* Ajusta el margen entre los botones */
+}
+
+.btn-icon {
+  background-color: rgba(255, 129, 14, 0.5); /* Color naranja con opacidad del 50% */
+}
+
+.btn svg {
+  width: 1em; /* Tamaño del SVG */
+  height: 1em; /* Tamaño del SVG */
+}
+
+.btn-download {
+  background-color: #fd922e; /* Color naranja FF810E */
+  box-shadow: 0 0 10px rgba(255, 129, 14, 0.5); /* Efecto de luz anaranjada */
+  border: none; /* Quita el borde */
+}
+
+.btn-download:hover {
+  background-color: #FF810E; /* Mantén el color naranja FF810E */
+  box-shadow: 0 0 20px rgba(255, 129, 14, 0.7); /* Efecto de luz anaranjada al pasar el ratón */
+}
+
+.btn-about-me {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-about-me:hover {
+  background-color: #ffffff; /* Mantén el color naranja FF810E */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); 
+}
+
+.icon {
+  width: 20px; /* Ajusta el ancho del ícono */
+  height: 20px; /* Ajusta el alto del ícono */
+}
+
+.circle-buttons {
+  margin-top: 20px; /* Espacio entre los botones anteriores y los nuevos */
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+}
+
+.btn-circle {
+  width: 50px; /* Tamaño del botón circular */
+  height: 50px; /* Tamaño del botón circular */
+  border-radius: 50%; /* Forma circular */
+  background-color: #00141F; /* Color de fondo */
+  border: none; /* Quita el borde */
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+.btn-circle.btn-outline {
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #00141F; /* Borde sólido */
+}

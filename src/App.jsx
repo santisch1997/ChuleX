@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ChulexView from './views/ChulexView';
-import PortfolioView from './views/PortfolioView';
+import PortfolioChulexView from './views/PortfolioChulexView';
 import PortfolioHome from './views/PortfolioHome';
 
 
@@ -15,10 +15,9 @@ function App() {
         
         <Route path="/" element={<PortfolioHome />} />
         <Route path="/chulex" element={<ChulexView />} />
-        <Route path="/portfolio" element={<PortfolioView />} />
+        <Route path="/portfolioChulex" element={<PortfolioChulexView />} />
 
 
-        {/* Agrega más rutas y componentes de vistas según sea necesario */}
       </Routes>
     </Router>
   );

@@ -1,0 +1,36 @@
+.about2-card {
+  width: 90%; /* Utiliza el 90% del ancho disponible */
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 0 20px; /* Añade relleno a los lados */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  color: #fd922e;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.about2-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  font-weight: 700; /* Semi-bold */
+  margin: 0;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify; /* Mantiene el justificado */
+}
+
+#about2-container .last-paragraph-About2 {
+  margin-bottom: 50px; /* Reduzco el espacio inferior */
+  font-weight: 300; /* Semi-bold */
+}

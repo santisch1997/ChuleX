@@ -6,8 +6,8 @@ function Card({ imageSrc, imageAlt, title, description }) {
     <div className="card">
       <img src={imageSrc} alt={imageAlt} className="card-img-top" />
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
+        <h5 className="card-title-chulex">{title}</h5>
+        <p className="card-text-chulex">{description}</p>
       </div>
     </div>
   );

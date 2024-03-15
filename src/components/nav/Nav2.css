@@ -1,0 +1,68 @@
+.portfolio-nav {
+    position:relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Establece un ancho máximo para evitar que la barra de navegación se vuelva demasiado ancha en pantallas grandes */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #003747;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos horizontalmente con espacio entre ellos */
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .menu-icon {
+    display: none; /* Oculta el icono del menú por defecto */
+  }
+  
+  .portfolio-nav button {
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .portfolio-nav button:hover {
+    color: #fd922e;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .portfolio-nav {
+      flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+      align-items: flex-start; /* Alinea los elementos al principio */
+      padding: 10px;
+    }
+  
+    .menu-icon {
+      display: block; /* Muestra el icono del menú en pantallas pequeñas */
+    }
+  
+    .menu {
+      display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+    }
+  
+    .menu.active {
+      display: flex; /* Muestra el menú desplegable cuando está activo */
+      flex-direction: column;
+      width: 100%;
+      background-color: #003747;
+      padding: 10px;
+      position: absolute;
+      top: 60px; /* Ajusta la posición para que esté justo debajo de la barra de navegación */
+      left: 0;
+      border-radius: 0 0 20px 20px;
+    }
+  
+    .menu.active button {
+      margin: 5px 0;
+    }
+  }
+  

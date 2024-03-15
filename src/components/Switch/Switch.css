@@ -1,0 +1,15 @@
+.switch-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .switch-container label {
+    margin: 0 10px;
+    color: #fff;
+  }
+  
+  .switch-container input[type='radio'] {
+    margin-right: 5px;
+  }
