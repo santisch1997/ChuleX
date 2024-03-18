@@ -3,7 +3,7 @@ import './Nav2.css'; // Asegúrate de tener el archivo de estilos para el Navbar
 import About2 from '../about/About2'; // Importa el componente About2
 import Projects from '../Projects/Projects'; // Importa el componente Projects
 
-const Navigation = () => {
+const Navigation2 = () => {
   const scrollToAbout = () => {
     const aboutElement = document.getElementById('about-component');
     aboutElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -24,4 +24,4 @@ const Navigation = () => {
   );
 }
 
-export default Navigation;
+export default Navigation2;

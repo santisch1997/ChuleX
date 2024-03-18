@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../components/nav/Nav'; // Importa la barra de navegación Nav.jsx
+import NavChulex from '../components/nav/NavChulex'; // Corregir la ruta de importación
 import Footer from '../components/footer/Footer';
 import PhotoCollage from '../components/photocollage/PhotoCollage';
 
@@ -9,7 +9,7 @@ const PortfolioChulexView = () => {
 
   return (
     <div>
-      <Navigation className="main-nav" /> {/* Utiliza la barra de navegación Nav.jsx con el mismo className */}
+      <NavChulex />
       <PhotoCollage />
       <Footer />
     </div>

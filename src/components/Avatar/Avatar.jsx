@@ -17,7 +17,7 @@ const Avatar = ({ src, alt }) => {
 
   // Función para manejar el clic en el botón "About Me"
   const handleScrollToAbout = () => {
-    const aboutElement = document.getElementById('about2-container'); // Obtiene el elemento del componente About2.jsx
+    const aboutElement = document.getElementById('about-component'); // Obtiene el elemento del componente About2.jsx
     aboutElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Hace scroll suavemente hacia el componente About2.jsx
   };
 

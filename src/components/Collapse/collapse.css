@@ -1,0 +1,51 @@
+.collapse {
+    width: 70%;
+    margin: auto; /* Agregado para centrar horizontalmente */
+    margin-bottom: 20px;
+    background-color: #0036475d;
+
+    
+}
+
+
+  
+.collapse-title {
+    background-color: #7aa8ce;
+    color: #fff;
+    font-weight: bold;
+}
+  
+.collapse-content {
+    background-color: #73b4ea79;
+    visibility: visible;
+    color: #fff;
+
+
+}
+
+
+
+  
+
+.collapse {
+    display: block !important;
+  }
+
+  .title-myskills {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #fd922e;
+    width: 90%; /* Utiliza el 90% del ancho disponible */
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 0 20px; /* Añade relleno a los lados */
+  margin-bottom: 70px;
+  margin-top: 100px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .title-myskills {
+      font-size: 2.5em; /* Ajusta el tamaño del título en dispositivos móviles */
+    }
+  }
