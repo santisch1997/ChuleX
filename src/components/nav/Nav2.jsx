@@ -15,10 +15,16 @@ const Navigation2 = () => {
     projectsElement.scrollIntoView({ behavior: 'smooth' });
   };
 
+
+  const scrollToSkills = () => {
+    const skillsElement = document.getElementById('skills-component');
+    skillsElement.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav className="portfolio-nav" style={{ backgroundColor: '#003747' }}>
       <button onClick={scrollToAbout}>About</button>
-      <button >My Skills</button>
+      <button onClick={scrollToSkills}>My Skills</button>
       <button onClick={scrollToProjects}>Projects</button>
     </nav>
   );

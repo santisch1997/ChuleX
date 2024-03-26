@@ -8,8 +8,10 @@ const Collapse = ({ title, children, className }) => {
     setIsOpen(!isOpen);
   };
 
+  const combinedClassName = `collapse collapse-arrow bg-base-200 ${className || ''} ${isOpen ? 'open' : ''} skills-component`;
+
   return (
-    <div className={`collapse collapse-arrow bg-base-200 ${className || ''} ${isOpen ? 'open' : ''}`}>
+    <div className={combinedClassName}>
       <div className="collapse-title text-xl font-medium" onClick={toggleCollapse}>
         {title}
       </div>

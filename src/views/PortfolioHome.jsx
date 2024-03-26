@@ -15,7 +15,7 @@ const PortfolioView = () => {
       <Techs />
       <About2 />
 
-      <div className="title-myskills card-title">My Skills</div>
+      <div title="Skills" id="skills-component" className="title-myskills card-title">My Skills</div>
 
       {/* Primer Collapse */}
       <Collapse title="UX/UI Design">
