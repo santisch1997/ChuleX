@@ -1,5 +1,9 @@
 import React from 'react';
 import './Herramientas.css';
+import imagenDrone from '../../assets/equipos-drone-gif.gif';
+import imagenGimball from '../../assets/equipos-gimball.png';
+import imagenInsta360 from '../../assets/insta360.png';
+import imageniPhone from '../../assets/iphone14.png';
 
 function Herramientas() {
   return (
@@ -9,26 +13,25 @@ function Herramientas() {
       <div className="herramientas-images">
         <div className="tool">
           <div className="tool-content">
-            <img src="src/assets/equipos-drone-gif.gif" alt="DJI Mavic Air 2" className="drone-image" />
+            <img src={imagenDrone} alt="DJI Mavic Air 2" className="drone-image" />
             <h4 className="herramientas-h4">DJI Mavic Air 2</h4>
           </div>
         </div>
         <div className="tool">
           <div className="tool-content">
-            <img src="src/assets/equipos-gimball.png" alt="DJI Gimball OM4" className="gimbal-image" />
+            <img src={imagenGimball} alt="DJI Gimball OM4" className="gimbal-image" />
             <h4 className="herramientas-h4">DJI Gimball OM4</h4>
           </div>
         </div>
         <div className="tool">
           <div className="tool-content">
-            <img src="src/assets/insta360.png" alt="Insta 360 X3" className="insta360-image" />
+            <img src={imagenInsta360} alt="Insta 360 X3" className="insta360-image" />
             <h4 className="herramientas-h4">Insta 360 X3</h4>
-        
           </div>
         </div>
         <div className="tool">
           <div className="tool-content">
-            <img src="src/assets/iphone14.png" alt="iPhone 14 Pro" className="iphone-image" />
+            <img src={imageniPhone} alt="iPhone 14 Pro" className="iphone-image" />
             <h4 className="herramientas-h4">iPhone 14 Pro</h4>
           </div>
         </div>
