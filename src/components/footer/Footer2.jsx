@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer2.css';
-import WSPicon from '../../assets/Whatsapp.png';
+import WSPicon from '../../assets/whatsapp.png';
 import GMAILicon from '../../assets/gmail.png';
 import LINKEDINicon from '../../assets/linkedin.png';
 
