@@ -19,9 +19,19 @@ body:not(.chulex-body) {
   background-color: #00141F;
   margin: 0;
   padding: 0;
-  background-image: url('../src/assets/backg5.png');
-  background-size:cover;
+  background-image: url('../src/assets/backg-cuadrados.png');
+  background-size:100%;
 }
+
+#particles-js {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Asegúrate de que las partículas estén por encima del contenido */
+}
+
 
 .background-image {
   position: absolute;

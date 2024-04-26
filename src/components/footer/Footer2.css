@@ -1,0 +1,21 @@
+.footer {
+    position: relative;
+    z-index: 1000; /* Un valor mayor que el del canvas de las partículas */
+    display: flex; /* Convertir el footer en un contenedor flexible */
+    flex-direction: column; /* Cambiar la dirección de la disposición a columna */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+  }
+  
+  .nav-footer {
+    display: flex;
+    flex-direction: row; /* Mantener la dirección de la disposición en fila */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los íconos */
+  }
+  
+  .footer-icon {
+    width: 30px;
+    height: auto;
+    margin-top: 5px; /* Reducir el espacio entre los íconos y el texto */
+  }

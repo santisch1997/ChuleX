@@ -8,8 +8,7 @@ import Projects4 from '../../assets/pr4.jpg'
 import Projects5 from '../../assets/pr5.jpg'
 import Projects6 from '../../assets/pr6.jpg'
 import Projects7 from '../../assets/pr7.jpg'
-
-
+import LinkIcon from '../../assets/link-icon.png'; 
 
 
 
@@ -28,32 +27,38 @@ const Projects = () => {
       {
         image: Projects1,
         title: "DARE Mobile App",
-        description: "Una app para solucionar el problema a la hora de hacer y recibir regalos !",
+        description: "A mobile app to solve the problem when giving and receiving gifts!",
+        link: "https://www.behance.net/gallery/192024761/DARE-APP-(UXUI-Design-Project)"
       },
       {
         image: Projects2,
         title: "ARTICO Mobile App",
-        description: "Proyecto Final de curso de diseño UX/UI. Una app para conectar artistas.",
+        description: "Final course project for UX/UI design. An app to connect artists.",
+        link: "https://www.behance.net/gallery/161727603/Proyecto-ARTICO-Diseno-UXUI-Coder-House"
       },
       {
         image: Projects3,
         title: "MakeMyPc",
-        description: "Diseño para un proyecto de desarrollo de un e-commerce de componentes de pc.",
+        description: "Design for a PC components e-commerce development project.",
+        link: "https://www.behance.net/gallery/189563839/E-Commerce-Project"
+
       },
       {
         image: Projects4,
         title: "Campaña ST",
-        description: "Campaña de comunicación para Santa Tierra Mercado en Pascuas.",
+        description: "Communication campaign for Santa Tierra Mercado during Easter.",
+        link: "https://www.behance.net/gallery/194281981/CAMPANA-PASCUAS-2024-SANTA-TIERRA"
       },
       {
         image: Projects5,
         title: "UX/UI Challenges",
-        description: "Diferentes desafios de diseño que me propongo. PARTE 1.",
+        description: "Different design challenges that I set for myself. PART 1.",
+        link: "https://www.behance.net/gallery/190095723/UXUI-Design-Challenges-(1)"
       },
       {
         image: Projects6,
         title: "Diseño de Portfolio",
-        description: "Diseño de mi portfolio - Figma.",
+        description: "Designing my portfolio - Figma.",
       },
    
     ];
@@ -62,17 +67,17 @@ const Projects = () => {
       {
         image: Projects3,
         title: "MakeMyPc",
-        description: "Desarrollo Front-End de tienda e-commerce para venta de componentes de pc.",
+        description: "Front-End development of an e-commerce store for PC component sales.",
       },
       {
         image: Projects7,
         title: "Drivers App",
-        description: "Proyecto individual para Bootcamp Full Stack Dev. SPA con la mejor información acerca de corredores de F1.",
+        description: "Individual project for Full Stack Dev Bootcamp. SPA with the best information about F1 racers.",
       },
       {
         image: Projects6,
         title: "Desarrollo de Portfolio",
-        description: "Desarrollo de portfolio personal con React + Vite, Tailwind y Daisy UI.",
+        description: "Development of personal portfolio with React + Vite, Tailwind, and Daisy UI.",
       },
       {
         image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
@@ -95,8 +100,8 @@ const Projects = () => {
   return (
     <div className="project-container" id="projects-component">
       <div className="project">
-        <h2 className="project-title">Mis Proyectos</h2>
-        <p className="project-description">Aquí puedes encontrar mis últimos proyectos !</p>
+        <h2 className="project-title">My Projects</h2>
+        <p className="project-description">Here you can find my latest projects!</p>
         <Switch className="switcher-project" value={switchValue} onChange={handleSwitchChange} />
         <div className="image-container">
           <div className="row row1">
@@ -104,6 +109,11 @@ const Projects = () => {
               <div className="image-wrapper" key={index}>
                 <img src={project.image} alt={`Imagen ${index + 1}`} />
                 <div className="image-overlay">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className="link-button">
+                      <img className="link-icon" src={LinkIcon} alt="Link Icon" />
+                    </button>
+                  </a>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                 </div>

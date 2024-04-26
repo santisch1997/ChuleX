@@ -1,0 +1,106 @@
+.container-drone-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel-container {
+  position: relative;
+  width: 71%; /* Ancho actual del Carousel */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px; /* Agregamos bordes redondeados */
+}
+
+.carousel {
+  height: 70vh;
+}
+
+.overlay-drone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.overlay-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.overlay-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.overlay-button1 {
+  background-color: #27a5cc;
+  box-shadow: 0 0 5px rgba(14, 14, 14, 0.5);
+  border: none;
+}
+
+.overlay-button1:hover {
+  background-color: #78c7df;
+  box-shadow: 0 0 10px #1489ac;
+}
+
+.Carousel-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  color: #fd922e;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.carousel-caption::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa negra con opacidad */
+  z-index: 1; /* Asegura que esté delante del texto */
+  border-radius: 15px; /* Agregamos bordes redondeados */
+}
+
+.carousel-caption {
+  position: absolute; /* Ajusta la posición del texto superpuesto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Color del texto */
+  z-index: 2; /* Asegura que esté delante de la capa negra */
+}
+
+@media (max-width: 768px) {
+  /* Añade estilos para pantallas de hasta 768px de ancho */
+  .carousel-container {
+    width: 90%; /* Reducir el ancho del Carousel */
+  }
+
+  .carousel {
+    height: 50vh; /* Reducir la altura del Carousel */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Añade estilos para pantallas de hasta 576px de ancho */
+  .carousel-caption {
+    font-size: 0.8em; /* Reducir el tamaño del texto */
+  }
+}

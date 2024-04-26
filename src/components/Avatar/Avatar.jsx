@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Avatar.css';
-import avatarImage from '../../assets/chulex1.png';
+import avatarImage1 from '../../assets/chulex1.png';
+import avatarImage2 from '../../assets/chulex2.png';
 import downloadIcon from '../../assets/icon-descarga.png';
 import socialIcon1 from '../../assets/social-icon1.png';
 import socialIcon2 from '../../assets/social-icon2.png';
@@ -8,11 +9,23 @@ import socialIcon3 from '../../assets/social-icon3.png';
 import socialIcon4 from '../../assets/social-icon4.png';
 import socialIcon5 from '../../assets/social-icon5.png';
 
-const Avatar = ({ src, alt }) => {
+const Avatar = ({ alt }) => {
+  const [currentImage, setCurrentImage] = useState(avatarImage1);
+
+  // Función para manejar el cambio de imagen al pasar el ratón por encima
+  const handleMouseOver = () => {
+    setCurrentImage(avatarImage2);
+  };
+
+  // Función para manejar el cambio de imagen al sacar el ratón
+  const handleMouseOut = () => {
+    setCurrentImage(avatarImage1);
+  };
+
   // Función para manejar el clic en el botón de descarga
   const handleDownload = () => {
     // Abrir el enlace en una nueva pestaña
-    window.open('https://drive.google.com/file/d/1C_kooU0CULMXnbkNdMu5ONOes1e7XUCH/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1oKhAE6gJGxocviqPCdxOxMUmocCqvWe7/view?usp=sharing', '_blank');
   };
 
   // Función para manejar el clic en el botón "About Me"
@@ -60,9 +73,15 @@ const Avatar = ({ src, alt }) => {
         </div>
       </div>
       <div className="gradient-circle"></div>
-      <img src={avatarImage} alt={alt} className="avatar-img" />
+      <img
+        src={currentImage}
+        alt={alt}
+        className="avatar-img"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      />
     </div>
   );
-}
+};
 
 export default Avatar;

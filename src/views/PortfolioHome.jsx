@@ -6,12 +6,16 @@ import Techs from '../components/Techs/Techs';
 import About2 from '../components/about/About2';
 import Projects from '../components/Projects/Projects';
 import Collapse from '../components/Collapse/collapse';
+import Carousel  from '../components/carousel/Carousel';
+import Footer2 from '../components/footer/Footer2';
+
 
 const PortfolioView = () => {
   return (
     <ThemeProvider>
       <Nav className="portfolio-nav" />
       <Avatar />
+      
       <Techs />
       <About2 />
 
@@ -65,6 +69,10 @@ const PortfolioView = () => {
       </Collapse>
 
       <Projects />
+      <Carousel/>
+      <Footer2/>
+
+
     </ThemeProvider>
   );
 }

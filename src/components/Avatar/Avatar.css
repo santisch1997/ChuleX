@@ -7,14 +7,25 @@
 
 .avatar-img {
   position: relative;
-  width: 80%; /* Utiliza el 80% del ancho disponible */
+  width: 350px; /* Ancho específico para la imagen */
   height: auto; /* Permite que la altura se ajuste automáticamente */
   margin-left: auto; /* Para moverlo hacia el lado derecho */
-  margin-right: auto; /* Centra horizontalmente */
-  max-width: 350px; /* Ancho máximo */
-  
+  margin-right: 200px; /* Agrega un margen en el lado derecho */
+  max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+  transition: transform 1s ease, opacity 1s ease; /* Transición suave de transformación y opacidad */
 }
 
+.avatar-img:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+  opacity: 0.8; /* Reduce la opacidad al 80% */
+}
+
+/* .avatar-img {
+  mask-image: linear-gradient(
+    black 50%,
+    transparent
+  );
+} */
 .avatar-text {
   text-align: center; /* Centra horizontalmente */
   width: 80%; /* Utiliza el 80% del ancho disponible */
@@ -80,7 +91,9 @@
   font-weight: 600; /* Semi-bold */
   color: #f5f5f5; /* Blanco crudo */
   margin: 0; /* Elimina el margen por defecto */
-  font-size: 3em; /* Tamaño de fuente muy grande */
+  font-size: 3em; /* Tamaño de fuente muy grande */  
+  position: relative;
+
 }
 
 .santiago {
@@ -114,11 +127,13 @@
   background-color: #fd922e; /* Color naranja FF810E */
   box-shadow: 0 0 10px rgba(255, 129, 14, 0.5); /* Efecto de luz anaranjada */
   border: none; /* Quita el borde */
+  position: relative;
+
 }
 
 .btn-download:hover {
   background-color: #FF810E; /* Mantén el color naranja FF810E */
-  box-shadow: 0 0 20px rgba(255, 129, 14, 0.7); /* Efecto de luz anaranjada al pasar el ratón */
+  box-shadow: 0 0 10px rgba(255, 129, 14, 0.7); /* Efecto de luz anaranjada al pasar el ratón */
 }
 
 .btn-about-me {
@@ -127,11 +142,12 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
+  position: relative;
 }
 
 .btn-about-me:hover {
   background-color: #ffffff; /* Mantén el color naranja FF810E */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
 }
 
 .icon {
@@ -151,9 +167,12 @@
   background-color: #00141F; /* Color de fondo */
   border: none; /* Quita el borde */
   margin-right: 10px; /* Espacio entre los botones */
+  position: relative;
+
 }
 
 .btn-circle.btn-outline {
   background-color: transparent; /* Fondo transparente */
   border: 2px solid #00141F; /* Borde sólido */
 }
+

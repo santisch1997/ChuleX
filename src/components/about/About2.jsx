@@ -4,6 +4,8 @@ import './About2.css';
 
 const About2 = () => {
   return (
+
+    
     <div  id="about-component"> 
       <div className="about2-card">
         <h2 className="card-title">About Me</h2>
