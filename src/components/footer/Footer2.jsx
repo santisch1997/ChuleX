@@ -6,8 +6,8 @@ import LINKEDINicon from '../../assets/linkedin.png';
 
 const Footer2 = () => {
   return (
-    <footer className="footer footer2 p-10 flex justify-center items-center flex-col" style={{backgroundColor: "#00141F", color: "#fff"}}>
-      <nav className="mb-4 nav-footer">
+    <footer className="footer2-container p-10 flex justify-center items-center flex-col" style={{backgroundColor: "#00141F", color: "#fff"}}>
+  <nav className="mb-4 nav-footer">
         <a href="https://wa.link/8raoja" target="_blank" rel="noopener noreferrer">
           <img src={WSPicon} alt="WhatsApp" className="footer-icon" />
         </a>
@@ -18,11 +18,11 @@ const Footer2 = () => {
           <img src={LINKEDINicon} alt="LinkedIn" className="footer-icon" />
         </a>
       </nav>
-      <aside className="text-center">
+      <aside className="text-centerofooter">
         <p className="font-bold">
           Santiago Scheuermann - Portfolio
         </p> 
-        <p>Copyright © 2024 - All right reserved</p>
+        <p>⚡ Designed and developed by me ⚡</p>
       </aside> 
     </footer>
   );

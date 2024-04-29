@@ -12,6 +12,12 @@
   display: flex;
   justify-content: center; /* Alinea los elementos horizontalmente en el centro */
   align-items: center;
+  border: none; /* Elimina el borde */
+  transition: box-shadow 0.3s; /* Agrega transición para el efecto hover */
+}
+
+.portfolio-nav:hover {
+  box-shadow: 0 0 10px rgba(255, 129, 14, 0.5); /* Agrega una sombra leve al hacer hover */
 }
 
 .portfolio-nav button {
