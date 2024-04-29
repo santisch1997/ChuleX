@@ -83,6 +83,8 @@
   margin: 0; /* Elimina el margen por defecto */
   font-size: 4.5em; 
   text-align: left;
+  position: relative;
+
 
 }
 

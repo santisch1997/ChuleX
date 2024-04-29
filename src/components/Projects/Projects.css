@@ -1,6 +1,7 @@
 .project-container {
   display: flex;
   justify-content: center;
+  position: relative;
 }
   
 .project {
@@ -15,6 +16,7 @@
   
 .switcher-project {
   margin-bottom: 30px;
+  position: relative;
 }
   
 .project-title {
