@@ -116,3 +116,27 @@ color: #73b4eaf5 ;
   width: 80%; /* Ajusta el tamaño del ícono dentro del botón */
   height: auto; /* Altura automática para mantener la proporción */
 }
+
+@media (max-width: 767px) {
+  .image-container {
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+    margin: 0 -10px; /* Compensa el espacio negativo agregado por los márgenes */
+    padding: 20px 10px; /* Añade espacio a los lados para las flechas de navegación */
+  }
+  
+  .image-wrapper {
+    width: calc(100% - 20px); /* Ajusta el ancho para cada elemento */
+    margin-right: 10px; /* Espacio entre los elementos */
+  }
+  
+  .image-wrapper:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .carousel-control {
+    font-size: 36px; /* Tamaño de fuente más grande para las flechas */
+  }
+}

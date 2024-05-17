@@ -1,16 +1,16 @@
 .avatar-container {
   display: flex;
-  justify-content: center; /* Alinea horizontalmente en el centro */
-  align-items: center; /* Alinea verticalmente en el centro */
-  width: 90%; /* Utiliza el 90% del ancho disponible */
+  justify-content: center; /* Centra horizontalmente en el contenedor */
+  align-items: center; /* Centra verticalmente en el contenedor */
+  width: 70%; /* Utiliza el 90% del ancho disponible */
+  margin: 0 auto; /* Centra el contenedor en la página */
 }
 
 .avatar-img {
   position: relative;
   width: 350px; /* Ancho específico para la imagen */
   height: auto; /* Permite que la altura se ajuste automáticamente */
-  margin-left: auto; /* Para moverlo hacia el lado derecho */
-  margin-right: 200px; /* Agrega un margen en el lado derecho */
+  margin: 0; /* Reduce el margen horizontal */
   max-width: 100%; /* Evita que la imagen se desborde del contenedor */
   transition: transform 1s ease, opacity 1s ease; /* Transición suave de transformación y opacidad */
 }
@@ -20,60 +20,12 @@
   opacity: 0.8; /* Reduce la opacidad al 80% */
 }
 
-/* .avatar-img {
-  mask-image: linear-gradient(
-    black 50%,
-    transparent
-  );
-} */
 .avatar-text {
-  text-align: center; /* Centra horizontalmente */
-  width: 80%; /* Utiliza el 80% del ancho disponible */
-  margin-left: auto; /* Para moverlo hacia el lado derecho */
-  margin-right: auto; /* Centra horizontalmente */
+  text-align: left; /* Alinea el texto a la izquierda */
   max-width: 600px; /* Ancho máximo */
-}
-
-.button-container {
-  margin-top: 20px; /* Ajusta el margen superior para dar espacio entre el texto y los botones */
-  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
-  align-items: flex-start; /* Alinea los elementos verticalmente arriba */
-  justify-content: flex-start; /* Alinea los elementos a la izquierda */
-}
-
-.circle-buttons {
-  margin-top: 20px; /* Espacio entre los botones anteriores y los nuevos */
-  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
-  justify-content: flex-start; /* Alinea los elementos a la izquierda */
-}
-
-.btn-circle {
-  width: 3rem; /* Tamaño del botón circular en unidades relativas */
-  height: 3rem; /* Tamaño del botón circular en unidades relativas */
-  margin-right: 0.5rem; /* Espacio entre los botones */
-}
-
-/* Copia tu CSS existente debajo de esta línea */
-
-.avatar-container {
-  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
-  align-items: center; /* Centra verticalmente los elementos */
-  width: auto; 
-}
-.avatar-img {
-  position: relative;
-  width: 350px; /* Ancho específico para la imagen */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
-  margin-left: auto; /* Para moverlo hacia el lado derecho */
-  margin-right: 200px; /* Agrega un margen en el lado derecho */
-  max-width: 100%; /* Evita que la imagen se desborde del contenedor */
-}
-
-.avatar-text {
-  margin-left: 200px; /* Ajusta el margen izquierdo según sea necesario */
-  margin-right: 20px; /* Espacio entre el texto y la imagen */
-  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
-  flex-direction: column; /* Alinea los elementos verticalmente */
+  flex: 1; /* Toma el espacio restante del contenedor */
+  padding-left: 10px; /* Reduce el padding izquierdo */
+  margin: 0; /* Elimina el margen */
 }
 
 .greeting {
@@ -81,11 +33,7 @@
   font-weight: 600; /* Semi-bold */
   color: #f5f5f5; /* Blanco crudo */
   margin: 0; /* Elimina el margen por defecto */
-  font-size: 4.5em; 
-  text-align: left;
-  position: relative;
-
-
+  font-size: 4.5em;
 }
 
 .name {
@@ -93,9 +41,7 @@
   font-weight: 600; /* Semi-bold */
   color: #f5f5f5; /* Blanco crudo */
   margin: 0; /* Elimina el margen por defecto */
-  font-size: 3em; /* Tamaño de fuente muy grande */  
-  position: relative;
-
+  font-size: 3em; /* Tamaño de fuente muy grande */
 }
 
 .santiago {
@@ -105,11 +51,12 @@
   -webkit-background-clip: text; /* Aplicamos el clip de fondo al texto */
   background-clip: text; /* Aplicamos el clip de fondo al texto */
 }
+
 .button-container {
+  margin-top: 20px; /* Ajusta el margen superior para dar espacio entre el texto y los botones */
   display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
   align-items: flex-start; /* Alinea los elementos verticalmente arriba */
-  margin-top: 20px; /* Ajusta el margen superior para dar espacio entre el texto y los botones */
-
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
 }
 
 .btn {
@@ -130,7 +77,6 @@
   box-shadow: 0 0 10px rgba(255, 129, 14, 0.5); /* Efecto de luz anaranjada */
   border: none; /* Quita el borde */
   position: relative;
-
 }
 
 .btn-download:hover {
@@ -148,7 +94,7 @@
 }
 
 .btn-about-me:hover {
-  background-color: #ffffff; /* Mantén el color naranja FF810E */
+  background-color: #ffffff; /* Mantén el color blanco */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
 }
 
@@ -170,7 +116,6 @@
   border: none; /* Quita el borde */
   margin-right: 10px; /* Espacio entre los botones */
   position: relative;
-
 }
 
 .btn-circle.btn-outline {
@@ -178,3 +123,57 @@
   border: 2px solid #00141F; /* Borde sólido */
 }
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .avatar-container {
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente los elementos */
+    width: 100%; /* Utiliza el 100% del ancho disponible */
+    margin: 50px auto 0 auto; /* Centra el contenedor en la página y agrega margen superior */
+  }
+
+  .avatar-img {
+    margin: 0 auto 20px auto; /* Centra la imagen y agrega espacio debajo */
+    width: 80%; /* Ajusta el ancho al 80% */
+    max-width: 300px; /* Ancho máximo de 300px */
+  }
+
+  .avatar-text {
+    text-align: center; /* Centra el texto */
+    width: 90%; /* Utiliza el 90% del ancho disponible */
+    margin: 0 auto 20px auto; /* Centra el texto y agrega espacio debajo */
+  }
+
+  .greeting {
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente */
+  }
+
+  .name {
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+  }
+
+  .button-container {
+    justify-content: center; /* Centra horizontalmente los botones */
+    flex-direction: column; /* Alinea los botones verticalmente */
+    align-items: center; /* Centra horizontalmente los botones */
+    margin-top: 20px; /* Margen superior para dar espacio entre el texto y los botones */
+  }
+
+  .btn {
+    margin: 10px 0; /* Espacio entre los botones */
+    width: 100%; /* Los botones ocupan el 100% del ancho disponible */
+    max-width: 300px; /* Ancho máximo de 300px */
+  }
+
+  .circle-buttons {
+    justify-content: center; /* Centra horizontalmente los botones circulares */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas */
+    margin-top: 20px; /* Margen superior para dar espacio entre los botones y los botones circulares */
+  }
+
+  .btn-circle {
+    margin: 5px; /* Espacio entre los botones circulares */
+    width: 40px; /* Ajusta el tamaño del botón circular */
+    height: 40px; /* Ajusta el tamaño del botón circular */
+  }
+}

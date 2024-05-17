@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   position: relative;
 
 }
@@ -27,6 +27,7 @@
   align-items: center;
   transition: box-shadow 0.3s ease; /* Transición para el cambio de sombra */
   animation:pulse 2s infinite;
+  margin-top: 10px;
 
 }
 
