@@ -1,25 +1,33 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import Switch from '../Switch/Switch'; 
-import Projects1 from '../../assets/pr1.jpg'
-import Projects2 from '../../assets/pr2.jpg'
-import Projects3 from '../../assets/pr3.jpg'
-import Projects4 from '../../assets/pr4.jpg'
-import Projects5 from '../../assets/pr5.jpg'
-import Projects6 from '../../assets/pr6.jpg'
-import Projects7 from '../../assets/pr7.jpg'
+import Projects1 from '../../assets/pr1.jpg';
+import Projects2 from '../../assets/pr2.jpg';
+import Projects3 from '../../assets/pr3.jpg';
+import Projects4 from '../../assets/pr4.jpg';
+import Projects5 from '../../assets/pr5.jpg';
+import Projects6 from '../../assets/pr6.jpg';
+import Projects7 from '../../assets/pr7.jpg';
 import LinkIcon from '../../assets/link-icon.png'; 
-
-
-
 
 const Projects = () => {
   const [switchValue, setSwitchValue] = useState('UX/UI');
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleSwitchChange = (value) => {
     setSwitchValue(value);
+    setCurrentIndex(0); // Reset to first project when switching
   };
 
+  const handleNext = () => {
+    console.log("Next clicked");
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+  };
+  
+  const handlePrev = () => {
+    console.log("Previous clicked");
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+  };
   let projects = [];
 
   if (switchValue === 'UX/UI') {
@@ -41,7 +49,6 @@ const Projects = () => {
         title: "MakeMyPc",
         description: "Design for a PC components e-commerce development project.",
         link: "https://www.behance.net/gallery/189563839/E-Commerce-Project"
-
       },
       {
         image: Projects4,
@@ -60,7 +67,6 @@ const Projects = () => {
         title: "Diseño de Portfolio",
         description: "Designing my portfolio - Figma.",
       },
-   
     ];
   } else if (switchValue === 'Front End Dev') {
     projects = [
@@ -103,13 +109,13 @@ const Projects = () => {
         <h2 className="project-title">My Projects</h2>
         <p className="project-description">Here you can find my latest projects!</p>
         <Switch className="switcher-project" value={switchValue} onChange={handleSwitchChange} />
-        <div className="image-container">
+        <div className="image-container desktop-view">
           <div className="row row1">
             {projects.map((project, index) => (
               <div className="image-wrapper" key={index}>
                 <img src={project.image} alt={`Imagen ${index + 1}`} />
                 <div className="image-overlay">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <button className="link-button">
                       <img className="link-icon" src={LinkIcon} alt="Link Icon" />
                     </button>
@@ -121,10 +127,25 @@ const Projects = () => {
             ))}
           </div>
         </div>
+        <div className="mobile-controls">
+          <button className="arrow-button" onClick={handlePrev}>&#9664;</button>
+          <div className="mobile-project">
+            <img src={projects[currentIndex].image} alt={`Imagen ${currentIndex + 1}`} />
+            <div className="image-overlay">
+              <a href={projects[currentIndex].link} target="_blank" rel="noopener noreferrer">
+                <button className="link-button">
+                  <img className="link-icon" src={LinkIcon} alt="Link Icon" />
+                </button>
+              </a>
+              <h3>{projects[currentIndex].title}</h3>
+              <p>{projects[currentIndex].description}</p>
+            </div>
+          </div>
+          <button className="arrow-button" onClick={handleNext}>&#9654;</button>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Projects;
-
