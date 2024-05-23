@@ -23,6 +23,13 @@ body:not(.chulex-body) {
   background-size:100%;
 }
 
+@media (max-width: 576px) {
+  body:not(.chulex-body) {
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+  }
+}
+
 #particles-js {
   position:fixed;
   top: 0;

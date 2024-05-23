@@ -3,6 +3,7 @@ import './Switch.css';
 
 const Switch = ({ value, onChange }) => {
   const handleChange = (e) => {
+    console.log('Switch clicked:', e.target.value); // Verifica que esto se imprima en la consola
     onChange(e.target.value);
   };
 

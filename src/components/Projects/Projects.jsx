@@ -20,14 +20,13 @@ const Projects = () => {
   };
 
   const handleNext = () => {
-    console.log("Next clicked");
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
   
   const handlePrev = () => {
-    console.log("Previous clicked");
     setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   };
+
   let projects = [];
 
   if (switchValue === 'UX/UI') {
@@ -149,3 +148,4 @@ const Projects = () => {
 }
 
 export default Projects;
+

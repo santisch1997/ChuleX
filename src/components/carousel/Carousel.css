@@ -1,8 +1,10 @@
+/* Estilos generales */
 .container-drone-centered {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 .carousel-container {
@@ -35,6 +37,12 @@
 .overlay-description {
   font-size: 1.2em;
   margin-bottom: 20px;
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .overlay-button1 {
@@ -88,19 +96,103 @@
 }
 
 @media (max-width: 768px) {
-  /* Añade estilos para pantallas de hasta 768px de ancho */
   .carousel-container {
     width: 90%; /* Reducir el ancho del Carousel */
   }
 
   .carousel {
     height: 50vh; /* Reducir la altura del Carousel */
+    border-radius: 20px;
+  }
+
+  .overlay-title {
+    font-size: 1.5em; /* Reducir el tamaño del título en móvil */
+  }
+
+  .overlay-description {
+    font-size: 1em; /* Reducir el tamaño de la descripción en móvil */
+  }
+
+  .overlay-buttons {
+    flex-direction: column; /* Botones uno debajo del otro */
+    gap: 15px; /* Reducir el espacio entre botones */
+  }
+
+  .overlay-button1 {
+    font-size: 0.9em; /* Ajustar el tamaño del botón */
+    padding: 10px 15px; /* Ajustar el padding del botón */
+    width: 100%; /* Botones ocupan todo el ancho del contenedor */
+  }
+
+  .Carousel-title {
+    font-size: 2.5em; /* Reducir el tamaño del título principal en móvil */
   }
 }
 
+/* Estilos para la versión móvil */
 @media (max-width: 576px) {
-  /* Añade estilos para pantallas de hasta 576px de ancho */
+
+  .overlay-drone {
+    border-radius: 0 0 15px 15px; /* Agrega border-radius a las dos esquinas inferiores */
+  }
+  .Carousel-title {
+    margin-bottom: -150px;
+  }
+ 
   .carousel-caption {
     font-size: 0.8em; /* Reducir el tamaño del texto */
   }
+
+  .overlay-title {
+    font-size: 1.4em; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
+    margin-top: -200px; /* Mueve el título hacia arriba */
+  }
+
+  .overlay-description {
+    font-size: 0.8em; /* Reducir aún más el tamaño de la descripción en s */
+    width: 230px;
+    margin-top: -3px; /* Mueve la descripción hacia arriba */
+    margin-bottom: 5px;
+  }
+  .overlay-button1 {
+    font-size: 0.8em; /* Ajustar el tamaño del botón */
+    padding: 6px 12px; /* Ajustar el padding del botón */
+    margin: 5px; /* Espacio entre botones */
+    width: auto; /* Botones ocupan solo el ancho necesario */
+  }
+
+  .overlay-button1 {
+    font-size: 0.8em; /* Ajustar el tamaño del botón */
+    padding: 8px 15px; /* Ajustar el padding del botón */
+    width: auto; /* Botones ocupan solo el ancho necesario */
+  
+  }
+
+  .Carousel-title {
+    font-size: 2em; /* Reducir el tamaño del título principal en pantallas muy pequeñas */
+  }
+
+  /* Ajustar posición de las flechas de navegación */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position:absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    width: 10%;
+    z-index: 3;
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+
+   .carousel-indicators {
+    top: 46%; /* Ajusta este valor según necesites mover los indicadores */
+    z-index: 3;
+  }
 }
+
