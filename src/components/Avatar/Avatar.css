@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center; /* Centra horizontalmente en el contenedor */
   align-items: center; /* Centra verticalmente en el contenedor */
-  width: 70%; /* Utiliza el 90% del ancho disponible */
+  width: 70%; /* Utiliza el 70% del ancho disponible */
   margin: 0 auto; /* Centra el contenedor en la página */
 }
 
@@ -36,14 +36,6 @@
   font-size: 4.5em;
 }
 
-.name {
-  font-family: 'Montserrat', sans-serif; /* Usa la fuente Montserrat */
-  font-weight: 600; /* Semi-bold */
-  color: #f5f5f5; /* Blanco crudo */
-  margin: 0; /* Elimina el margen por defecto */
-  font-size: 3em; /* Tamaño de fuente muy grande */
-}
-
 .santiago {
   font-weight: bolder; /* Negrita */
   color: transparent; /* Hacemos el texto transparente */
@@ -61,15 +53,6 @@
 
 .btn {
   margin: 0 10px; /* Ajusta el margen entre los botones */
-}
-
-.btn-icon {
-  background-color: rgba(255, 129, 14, 0.5); /* Color naranja con opacidad del 50% */
-}
-
-.btn svg {
-  width: 1em; /* Tamaño del SVG */
-  height: 1em; /* Tamaño del SVG */
 }
 
 .btn-download {
@@ -116,14 +99,19 @@
   border: none; /* Quita el borde */
   margin-right: 10px; /* Espacio entre los botones */
   position: relative;
+  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
 }
 
-.btn-circle.btn-outline {
-  background-color: transparent; /* Fondo transparente */
-  border: 2px solid #00141F; /* Borde sólido */
+.btn-circle:hover {
+  background-color: #ffffff; /* Cambia el color de fondo al blanco al hacer hover */
 }
 
-/* Estilos para dispositivos móviles */
+.social-icon {
+  width: 50px; /* Ajusta el ancho del icono */
+  height: 50px; /* Ajusta el alto del icono */
+}
+
+/* Estilos adicionales para dispositivos móviles */
 @media (max-width: 768px) {
   .avatar-container {
     flex-direction: column; /* Alinea los elementos verticalmente */
@@ -163,17 +151,18 @@
     margin: 10px 0; /* Espacio entre los botones */
     width: 100%; /* Los botones ocupan el 100% del ancho disponible */
     max-width: 300px; /* Ancho máximo de 300px */
-  }
+ }
 
-  .circle-buttons {
-    justify-content: center; /* Centra horizontalmente los botones circulares */
-    flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas */
-    margin-top: 20px; /* Margen superior para dar espacio entre los botones y los botones circulares */
-  }
 
-  .btn-circle {
-    margin: 5px; /* Espacio entre los botones circulares */
-    width: 40px; /* Ajusta el tamaño del botón circular */
-    height: 40px; /* Ajusta el tamaño del botón circular */
-  }
+.circle-buttons {
+  justify-content: center; /* Centra horizontalmente los botones circulares */
+  flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas */
+  margin-top: 20px; /* Margen superior para dar espacio entre los botones y los botones circulares */
+}
+
+.btn-circle {
+  margin: 5px; /* Espacio entre los botones circulares */
+  width: 50px; /* Ajusta el tamaño del botón circular */
+  height: 40px; /* Ajusta el tamaño del botón circular */
+}
 }

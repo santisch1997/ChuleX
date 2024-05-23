@@ -132,9 +132,7 @@
 /* Estilos para la versión móvil */
 @media (max-width: 576px) {
 
-  .overlay-drone {
-    border-radius: 0 0 15px 15px; /* Agrega border-radius a las dos esquinas inferiores */
-  }
+ 
   .Carousel-title {
     margin-bottom: -150px;
   }
