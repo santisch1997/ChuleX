@@ -107,8 +107,8 @@
 }
 
 .social-icon {
-  width: 50px; /* Ajusta el ancho del icono */
-  height: 50px; /* Ajusta el alto del icono */
+  width: 100%; /* Establece el ancho al 100% */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
 /* Estilos adicionales para dispositivos móviles */
