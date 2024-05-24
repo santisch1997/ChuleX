@@ -110,7 +110,7 @@
 }
 
 .social-icon {
-  width: 100%; /* Establece el ancho al 100% */
+  width: auto; /* Establece el ancho al 100% */
   height: 100%; /* Permite que la altura se ajuste automáticamente */
 }
 
