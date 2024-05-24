@@ -104,6 +104,7 @@
   display: flex; /* Flexbox para centrar el ícono */
   justify-content: center; /* Centra horizontalmente el ícono */
   align-items: center; /* Centra verticalmente el ícono */  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+position: relative;
 }
 
 .btn-circle:hover {
