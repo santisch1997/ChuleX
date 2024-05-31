@@ -8,7 +8,10 @@ import Projects4 from '../../assets/pr4.jpg';
 import Projects5 from '../../assets/pr5.jpg';
 import Projects6 from '../../assets/pr6.jpg';
 import Projects7 from '../../assets/pr7.jpg';
-import LinkIcon from '../../assets/link-icon.png'; 
+import Projects8 from '../../assets/pr8.jpg';
+import Projects9 from '../../assets/pr9.png';
+import LinkIcon from '../../assets/link-icon.png';
+
 
 const Projects = () => {
   const [switchValue, setSwitchValue] = useState('UX/UI');
@@ -73,6 +76,7 @@ const Projects = () => {
         image: Projects3,
         title: "MakeMyPc",
         description: "Front-End development of an e-commerce store for PC component sales.",
+        link: "https://p-final-p-ccorp-front.vercel.app/catalogo"
       },
       {
         image: Projects7,
@@ -100,6 +104,43 @@ const Projects = () => {
         description: "Descripción del Proyecto 2",
       },
     ];
+  } else if (switchValue === 'No-Code') {
+    projects = [
+      {
+        image: Projects8,
+        title: "Lo de Jorge",
+        description: "Website for a meet specialist restaurant of La Plata (Argentina)",
+        link: "https://mediumvioletred-kudu-191553.hostingersite.com/"
+
+      },
+      {
+        image: Projects9,
+        title: "Giomila",
+        description: "E-commerce for an elegant-sport clothes brand that came from Italy to Argentina",
+        link: "https://www.giomila.com.ar"
+
+      },
+      {
+        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
+        title: "Título del Proyecto",
+        description: "Descripción del Proyecto",
+      },
+      {
+        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
+        title: "Título del Proyecto",
+        description: "Descripción del Proyecto",
+      },
+      {
+        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
+        title: "Título del Proyecto",
+        description: "Descripción del Proyecto",
+      },
+      {
+        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
+        title: "Título del Proyecto",
+        description: "Descripción del Proyecto",
+      },
+    ];
   }
 
   return (
@@ -114,11 +155,13 @@ const Projects = () => {
               <div className="image-wrapper" key={index}>
                 <img src={project.image} alt={`Imagen ${index + 1}`} />
                 <div className="image-overlay">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button className="link-button">
-                      <img className="link-icon" src={LinkIcon} alt="Link Icon" />
-                    </button>
-                  </a>
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <button className="link-button">
+                        <img className="link-icon" src={LinkIcon} alt="Link Icon" />
+                      </button>
+                    </a>
+                  )}
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                 </div>
@@ -127,20 +170,22 @@ const Projects = () => {
           </div>
         </div>
         <div className="mobile-controls">
-          <button className="arrow-button" onClick={handlePrev}>&#9664;</button>
+          <button className="arrow-button prev" onClick={handlePrev}>&#9664;</button>
           <div className="mobile-project">
             <img src={projects[currentIndex].image} alt={`Imagen ${currentIndex + 1}`} />
             <div className="image-overlay">
-              <a href={projects[currentIndex].link} target="_blank" rel="noopener noreferrer">
-                <button className="link-button">
-                  <img className="link-icon" src={LinkIcon} alt="Link Icon" />
-                </button>
-              </a>
+              {projects[currentIndex].link && (
+                <a href={projects[currentIndex].link} target="_blank" rel="noopener noreferrer">
+                  <button className="link-button">
+                    <img className="link-icon" src={LinkIcon} alt="Link Icon" />
+                  </button>
+                </a>
+              )}
               <h3>{projects[currentIndex].title}</h3>
               <p>{projects[currentIndex].description}</p>
             </div>
           </div>
-          <button className="arrow-button" onClick={handleNext}>&#9654;</button>
+          <button className="arrow-button next" onClick={handleNext}>&#9654;</button>
         </div>
       </div>
     </div>
@@ -148,4 +193,3 @@ const Projects = () => {
 }
 
 export default Projects;
-

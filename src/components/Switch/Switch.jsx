@@ -27,6 +27,15 @@ const Switch = ({ value, onChange }) => {
         />
         Front End Dev
       </label>
+      <label>
+        <input
+          type="radio"
+          value="No-Code"
+          checked={value === 'No-Code'}
+          onChange={handleChange}
+        />
+        No-Code
+      </label>
     </div>
   );
 };
