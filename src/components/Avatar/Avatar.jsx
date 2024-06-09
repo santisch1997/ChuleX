@@ -25,7 +25,7 @@ const Avatar = ({ alt }) => {
   // Función para manejar el clic en el botón de descarga
   const handleDownload = () => {
     // Abrir el enlace en una nueva pestaña
-    window.open('https://drive.google.com/file/d/1oKhAE6gJGxocviqPCdxOxMUmocCqvWe7/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1HuuqWFkaHb8a9NM2UmKl8gAhqa7_VxnX/view?usp=sharing', '_blank');
   };
 
   // Función para manejar el clic en el botón "About Me"
