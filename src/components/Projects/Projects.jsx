@@ -8,8 +8,9 @@ import Projects4 from '../../assets/pr4.jpg';
 import Projects5 from '../../assets/pr5.jpg';
 import Projects6 from '../../assets/pr6.jpg';
 import Projects7 from '../../assets/pr7.jpg';
-import Projects8 from '../../assets/pr8.jpg';
 import Projects9 from '../../assets/pr9.png';
+import Projects10 from '../../assets/Proyect10.png';
+
 import LDJ from '../../assets/ldj.png';
 import LinkIcon from '../../assets/link-icon.png';
 
@@ -118,14 +119,17 @@ const Projects = () => {
       {
         image: Projects9,
         title: "Giomila",
-        description: "E-commerce for an elegant-sport clothes brand that came from Italy to Argentina",
+        description: "E-commerce site for an elegant-sport clothes brand that came from Italy to Argentina",
         link: "https://www.giomila.com.ar"
 
       },
       {
-        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
-        title: "Título del Proyecto",
-        description: "Descripción del Proyecto",
+        image: Projects10,
+        title: "Hermanas Criollas",
+        description: "E-commerce site for a clothing brand specializing in country-elegant, self-designed apparel.",
+        link: "https://hermanascriollas.com/"
+
+        
       },
       {
         image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",

@@ -46,6 +46,9 @@ const PortfolioView = () => {
           <li>Javascript</li>
           <li>React + Redux</li>
           <li>Bootstrap & Tailwind</li>
+          <li>WordPress</li>
+          <li>Prestashop</li>
+          <li>Tienda Nube</li>
         </ul>
       </Collapse>
 
