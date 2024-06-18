@@ -10,7 +10,9 @@ import Projects6 from '../../assets/pr6.jpg';
 import Projects7 from '../../assets/pr7.jpg';
 import Projects8 from '../../assets/pr8.jpg';
 import Projects9 from '../../assets/pr9.png';
+import LDJ from '../../assets/ldj.png';
 import LinkIcon from '../../assets/link-icon.png';
+
 
 
 const Projects = () => {
@@ -107,10 +109,10 @@ const Projects = () => {
   } else if (switchValue === 'No-Code') {
     projects = [
       {
-        image: Projects8,
+        image: LDJ,
         title: "Lo de Jorge",
-        description: "Website for a meet specialist restaurant of La Plata (Argentina)",
-        link: "https://mediumvioletred-kudu-191553.hostingersite.com/"
+        description: "Website for a meat specialist restaurant of La Plata (Argentina)",
+        link: "https://www.lodejorge.com"
 
       },
       {
