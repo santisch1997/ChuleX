@@ -89,7 +89,7 @@ const Projects = () => {
       },
       {
         image: Projects6,
-        title: "Desarrollo de Portfolio",
+        title: "Developing my Portfolio",
         description: "Development of personal portfolio with React + Vite, Tailwind, and Daisy UI.",
       },
       {
