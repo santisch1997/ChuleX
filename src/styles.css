@@ -3,8 +3,6 @@
 @import 'tailwindcss/utilities';
 @import 'daisyui/dist/full.css';
 
-
-
 body.chulex-body {
   background-color: black;
 }
@@ -20,25 +18,24 @@ body:not(.chulex-body) {
   margin: 0;
   padding: 0;
   background-image: url('../src/assets/backg-cuadrados.png');
-  background-size:100%;
+  background-size: cover; /* Ajustar tamaño para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* Evitar repetición de la imagen */
 }
 
 @media (max-width: 576px) {
   body:not(.chulex-body) {
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: cover; /* Asegurar que la imagen de fondo cubra todo el contenedor */
   }
 }
 
 #particles-js {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0; /* Asegúrate de que las partículas estén por encima del contenido */
 }
-
 
 .background-image {
   position: absolute;
@@ -53,6 +50,7 @@ body:not(.chulex-body) {
     height: auto;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
   .background-image {
     width: auto;

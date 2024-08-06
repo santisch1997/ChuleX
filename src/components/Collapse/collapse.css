@@ -1,12 +1,9 @@
 .collapse {
     width: 70%;
-    margin: auto; /* Agregado para centrar horizontalmente */
+    margin: auto; 
     margin-bottom: 20px;
-    background-color: #0036475d;
-
-    
+    background-color: #0036475d;    
 }
-
 
   
 .collapse-title {
@@ -21,12 +18,7 @@
     visibility: visible;
     color: #fff;
     position: relative;
-
-
 }
-
-
-
   
 
 .collapse {
@@ -34,20 +26,22 @@
   }
 
   .title-myskills {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    color: #fd922e;
-    width: 90%; /* Utiliza el 90% del ancho disponible */
-  max-width: 900px; /* Ancho máximo */
-  margin: 0 auto; /* Centra horizontalmente */
-  padding: 0 20px; /* Añade relleno a los lados */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #fd922e;
+  width: 90%; 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
   margin-bottom: 70px;
   margin-top: 100px;
+  position: relative;
+
   }
   
   @media screen and (max-width: 768px) {
     .title-myskills {
-      font-size: 2.5em; /* Ajusta el tamaño del título en dispositivos móviles */
+      font-size: 2.5em; 
     }
   }

@@ -160,13 +160,7 @@
     z-index: 1000; /* Asegura que los botones estén en el frente */
   }
 
-  .mobile-controls .arrow-button.prev::before {
-    content: '◀'; /* Flecha hacia la izquierda */
-  }
 
-  .mobile-controls .arrow-button.next::before {
-    content: '▶'; /* Flecha hacia la derecha */
-  }
 
   .mobile-controls .arrow-button:hover {
     color: #e07b1e;

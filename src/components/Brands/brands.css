@@ -1,0 +1,61 @@
+.brands-container {
+    padding: 30px;
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  .brands-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #fd922e;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .brands-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear las filas al inicio (izquierda) */
+    padding: 0 20px; /* Agregar el mismo padding que el título */
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .logo-row {
+    display: flex;
+    justify-content: flex-start; /* Alinear los logos al inicio (izquierda) */
+    gap: 10px; /* Espacio entre logos */
+    margin-bottom: 10px; /* Espacio entre filas */
+  }
+  
+  .brand-logo {
+    max-width: 200px; /* Aumentar el tamaño máximo de los logos */
+    height: auto;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .brand-logo {
+      max-width: 150px; /* Aumentar el tamaño de los logos en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .logo-row {
+      flex-wrap: wrap; /* Permitir que las filas se envuelvan */
+      justify-content: space-between; /* Espacio entre los logos */
+    }
+  
+    .brand-logo {
+      max-width: 150px; /* Aumentar el tamaño de los logos en pantallas aún más pequeñas */
+      width: 48%; /* Ancho para que quepan 2 logos por fila */
+      margin-bottom: 10px; /* Espacio entre filas en pantallas pequeñas */
+    }
+  }
+  
+  

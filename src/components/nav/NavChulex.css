@@ -1,5 +1,56 @@
-.navbar-chulex {
+.portfolio-nav-chulex {
     position: relative; /* Asegura que el z-index funcione correctamente */
     z-index: 1000; /* Ajusta este valor según sea necesario para asegurarte de que esté por encima de otros elementos */
     /* Agrega otros estilos según sea necesario */
   }
+
+  .portfolio-nav-chulex {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px); /* Reducimos el ancho en 40px para dejar espacio para los padding */
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px; /* Incrementamos el padding para dar más espacio */
+    border-radius: 20px;
+    background-color: #171717;
+    z-index: 999;
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center;
+    border: none; /* Elimina el borde */
+    transition: box-shadow 0.3s; /* Agrega transición para el efecto hover */
+  }
+  
+  .portfolio-nav-chulex:hover {
+    box-shadow: 0 0 10px #fff53180; /* Agrega una sombra leve al hacer hover */
+  }
+  
+  .portfolio-nav-chulex button {
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 20px; /* Agregamos un margen horizontal */
+  }
+  
+  .portfolio-nav-chulex button:hover {
+    color: #fff53180;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .portfolio-nav-chulex {
+      flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+      align-items: center; /* Alinea los elementos al centro */
+      padding: 10px;
+    }
+    
+    .portfolio-nav-chulex button {
+      margin: 5px; /* Agregamos un margen a los botones */
+    }
+  }
+  

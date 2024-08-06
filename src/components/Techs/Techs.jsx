@@ -12,16 +12,19 @@ import techIcon9 from '../../assets/tech-icons/tech-icon9.png';
 import techIcon10 from '../../assets/tech-icons/tech-icon10.png';
 import techIcon11 from '../../assets/tech-icons/tech-icon11.png';
 import techIcon12 from '../../assets/tech-icons/tech-icon12.png';
+import techIcon13 from '../../assets/tech-icons/tech-icon13.png';
+import techIcon14 from '../../assets/tech-icons/tech-icon14.png';
+
 
 const Techs = () => {
   return (
     <div className="techs-container">
       <p className="techs-heading">Technologies</p>
       <div className="row">
-        {renderTechSquares(1, 6)}
+        {renderTechSquares(1, 7)}
       </div>
       <div className="row">
-        {renderTechSquares(7, 12)}
+        {renderTechSquares(8, 14)}
       </div>
     </div>
   );
@@ -67,6 +70,10 @@ const getTechIcon = (index) => {
       return techIcon11;
     case 12:
       return techIcon12;
+      case 13:
+      return techIcon13;
+      case 14:
+      return techIcon14;
     default:
       return null;
   }
@@ -98,6 +105,10 @@ const getTooltipText = (index) => {
       return "Express";
     case 12:
       return "SQL";
+    case 13:
+        return "WordPress";
+    case 14:
+      return "Prestashop";
     default:
       return null;
   }

@@ -8,6 +8,8 @@ import Projects from '../components/Projects/Projects';
 import Collapse from '../components/Collapse/collapse';
 import Carousel  from '../components/carousel/Carousel';
 import Footer2 from '../components/footer/Footer2';
+import Brands from '../components/Brands/brands';
+
 
 
 const PortfolioView = () => {
@@ -43,6 +45,7 @@ const PortfolioView = () => {
         <ul>
           <li>Web Design</li>
           <li>HTML / CSS</li>
+          <li>Styled Components</li>
           <li>Javascript</li>
           <li>React + Redux</li>
           <li>Bootstrap & Tailwind</li>
@@ -72,7 +75,10 @@ const PortfolioView = () => {
       </Collapse>
 
       <Projects />
+      <Brands/>
+
       <Carousel/>
+
       <Footer2/>
 
 

@@ -10,7 +10,7 @@ import Projects6 from '../../assets/pr6.jpg';
 import Projects7 from '../../assets/pr7.jpg';
 import Projects9 from '../../assets/pr9.png';
 import Projects10 from '../../assets/Proyect10.png';
-
+import Projects11 from '../../assets/Pr11.jpg';
 import LDJ from '../../assets/ldj.png';
 import LinkIcon from '../../assets/link-icon.png';
 
@@ -76,15 +76,16 @@ const Projects = () => {
   } else if (switchValue === 'Front End Dev') {
     projects = [
       {
+        image: Projects11,
+        title: "UX Developer Challenge",
+        description: "A small challenge where I combined my UX and front-end skills. ",
+        link: "https://ux-challenge-six.vercel.app/"
+      },
+      {
         image: Projects3,
         title: "MakeMyPc",
         description: "Front-End development of an e-commerce store for PC component sales.",
         link: "https://p-final-p-ccorp-front.vercel.app/catalogo"
-      },
-      {
-        image: Projects7,
-        title: "Drivers App",
-        description: "Individual project for Full Stack Dev Bootcamp. SPA with the best information about F1 racers.",
       },
       {
         image: Projects6,
@@ -92,9 +93,9 @@ const Projects = () => {
         description: "Development of personal portfolio with React + Vite, Tailwind, and Daisy UI.",
       },
       {
-        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
-        title: "Título del Proyecto 2",
-        description: "Descripción del Proyecto 2",
+        image: Projects7,
+        title: "Drivers App",
+        description: "Individual project for Full Stack Dev Bootcamp. SPA with the best information about F1 racers.",
       },
       {
         image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
