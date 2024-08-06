@@ -10,7 +10,7 @@ import Projects6 from '../../assets/pr6.jpg';
 import Projects7 from '../../assets/pr7.jpg';
 import Projects9 from '../../assets/pr9.png';
 import Projects10 from '../../assets/Proyect10.png';
-import Projects11 from '../../assets/Pr11.jpg';
+import Projects11 from '../../assets/pr11.jpg';
 import LDJ from '../../assets/ldj.png';
 import LinkIcon from '../../assets/link-icon.png';
 
