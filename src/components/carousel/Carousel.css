@@ -7,6 +7,10 @@
   
 }
 
+.carousel-item img {
+  border-radius: 15px; /* Ajusta el valor para redondear más o menos */
+}
+
 .carousel-container {
   position: relative;
   width: 71%; /* Ancho actual del Carousel */
@@ -59,8 +63,6 @@
 }
 
 
-
-
 .overlay-button1:hover {
   background-color: #78c7df;
   box-shadow: 0 0 10px #1489ac;
@@ -77,7 +79,6 @@
   padding: 0 20px;
   margin-top: 20px;
   position: relative;
-
 }
 
 .carousel-caption::before {
@@ -127,6 +128,8 @@
   .overlay-buttons {
     flex-direction: column; /* Botones uno debajo del otro */
     gap: 15px; /* Reducir el espacio entre botones */
+    justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;
   }
 
   .overlay-button1 {
@@ -153,12 +156,13 @@
   }
 
   .overlay-title {
-    font-size: 1.4em; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
-    margin-top: -200px; /* Mueve el título hacia arriba */
+    font-size: 1.5em; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
+    margin-top: -190px; /* Mueve el título hacia arriba */
+    font-weight: bold;
   }
 
   .overlay-description {
-    font-size: 0.8em; /* Reducir aún más el tamaño de la descripción en s */
+    font-size: 0.7em; /* Reducir aún más el tamaño de la descripción en s */
     width: 230px;
     margin-top: -3px; /* Mueve la descripción hacia arriba */
     margin-bottom: 5px;
@@ -168,6 +172,8 @@
     padding: 6px 12px; /* Ajustar el padding del botón */
     margin: 5px; /* Espacio entre botones */
     width: auto; /* Botones ocupan solo el ancho necesario */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
   }
 
   .overlay-button1 {
