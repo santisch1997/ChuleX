@@ -129,13 +129,15 @@
     flex-direction: column; /* Botones uno debajo del otro */
     gap: 15px; /* Reducir el espacio entre botones */
     justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center;
+    align-items: center;
   }
 
   .overlay-button1 {
     font-size: 0.9em; /* Ajustar el tamaño del botón */
     padding: 10px 15px; /* Ajustar el padding del botón */
     width: 100%; /* Botones ocupan todo el ancho del contenedor */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
   }
 
   .Carousel-title {
