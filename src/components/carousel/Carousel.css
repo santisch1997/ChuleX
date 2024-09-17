@@ -1,6 +1,6 @@
 /* Estilos generales */
 .container-drone-centered {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -44,12 +44,13 @@
 }
 
 .overlay-buttons {
-  display: flex;
+  display: grid;
   justify-content: center;
   gap: 10px;
 }
 
 .overlay-button1 {
+  display:flexbox;
   background-color: #27a5cc;
   box-shadow: 0 0 5px rgba(14, 14, 14, 0.5);
   border: none;
