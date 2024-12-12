@@ -4,13 +4,13 @@ import logo1 from '../../assets/brand-logos/logo1.png';
 import logo2 from '../../assets/brand-logos/logo2.png';
 import logo3 from '../../assets/brand-logos/logo3.png';
 import logo4 from '../../assets/brand-logos/logo4.png';
-import logo5 from '../../assets/brand-logos/logo5.png';
+import Logo5 from '../../assets/brand-logos/Logo5.png';
 
 
 // Importa más logos según sea necesario
 
 const Brands = () => {
-  const logos = [logo1, logo2, logo3, logo4, logo5 /* agregar más logos aquí */];
+  const logos = [logo1, logo2, logo3, logo4, Logo5 /* agregar más logos aquí */];
 
   return (
     <div className="brands-container">
