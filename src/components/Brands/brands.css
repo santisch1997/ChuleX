@@ -34,7 +34,7 @@
   }
   
   .brand-logo {
-    max-width: 200px; /* Aumentar el tamaño máximo de los logos */
+    max-width: 190px; /* Aumentar el tamaño máximo de los logos */
     height: auto;
     position: relative;
   }

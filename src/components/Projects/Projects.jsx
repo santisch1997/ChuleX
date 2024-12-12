@@ -11,6 +11,10 @@ import Projects7 from '../../assets/pr7.jpg';
 import Projects9 from '../../assets/pr9.png';
 import Projects10 from '../../assets/Proyect10.png';
 import Projects11 from '../../assets/pr11.jpg';
+import Projects12 from '../../assets/pr12.jpg';
+import Projects13 from '../../assets/pr13.jpg';
+
+
 import LDJ from '../../assets/ldj.png';
 import LinkIcon from '../../assets/link-icon.png';
 
@@ -50,10 +54,10 @@ const Projects = () => {
         link: "https://www.behance.net/gallery/161727603/Proyecto-ARTICO-Diseno-UXUI-Coder-House"
       },
       {
-        image: Projects3,
-        title: "MakeMyPc",
-        description: "Design for a PC components e-commerce development project.",
-        link: "https://www.behance.net/gallery/189563839/E-Commerce-Project"
+        image: Projects12,
+        title: "Chapelco Web Re-design",
+        description: "Redesign project for the Cerro Chapelco website for a Advanced UX/UI course.",
+        link: "https://www.behance.net/gallery/214315267/Rediseno-Web-Cerro-Chapelco"
       },
       {
         image: Projects4,
@@ -68,9 +72,10 @@ const Projects = () => {
         link: "https://www.behance.net/gallery/190095723/UXUI-Design-Challenges-(1)"
       },
       {
-        image: Projects6,
-        title: "Diseño de Portfolio",
-        description: "Designing my portfolio - Figma.",
+        image: Projects3,
+        title: "MakeMyPc",
+        description: "Design for a PC components e-commerce development project.",
+        link: "https://www.behance.net/gallery/189563839/E-Commerce-Project",
       },
     ];
   } else if (switchValue === 'Front End Dev') {
@@ -133,9 +138,10 @@ const Projects = () => {
         
       },
       {
-        image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
-        title: "Título del Proyecto",
-        description: "Descripción del Proyecto",
+        image: Projects13,
+        title: "UrbanLine",
+        description: "Website for a printing company, advertising graphics, and print shop",
+        link: "https://www.urbanline.com.ar/",
       },
       {
         image: "https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_300x168.jpg",
