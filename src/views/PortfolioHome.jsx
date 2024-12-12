@@ -36,6 +36,7 @@ const PortfolioView = () => {
           <li>Design Patterns & Design Systems</li>
           <li>Atomic Design</li>
           <li>Heuristic Evaluations</li>
+          <li>UX Writing</li>
           <li>Prototyping</li>
         </ul>
       </Collapse>
@@ -69,7 +70,7 @@ const PortfolioView = () => {
         <ul>
           <li>Spanish (Native)</li>
           <li>English (Advanced C1)</li>
-          <li>Portuguese (Intermediate - Semi Advanced)</li>
+          <li>Portuguese (Intermediate)</li>
          
         </ul>
       </Collapse>
